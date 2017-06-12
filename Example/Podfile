@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FunkySegmentBar_Example' do
+  pod 'FunkySegmentBar', :path => '../'
+
+  target 'FunkySegmentBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
