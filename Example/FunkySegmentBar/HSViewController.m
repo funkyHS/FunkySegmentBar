@@ -27,15 +27,18 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     
+    // 300
     self.segmentBarVC.segmentBar.frame = CGRectMake(0, 0, 300, 35);
-////    self.segmentBarVC.segmentBar.backgroundColor = [UIColor greenColor];
     self.navigationItem.titleView = self.segmentBarVC.segmentBar;
-//
+
+    self.navigationItem.titleView.backgroundColor = [UIColor blackColor];
     self.segmentBarVC.view.frame = self.view.bounds;
     [self.view addSubview:self.segmentBarVC.view];
-//    
     
-    NSArray *items = @[@"专辑", @"声音", @"下载中"];
+    
+
+    
+    NSArray *items = @[@"专辑", @"声音", @"下载中",@"专辑", @"声音", @"下载中"];
     
     // 添加几个自控制器
     // 在contentView, 展示子控制器的视图内容
@@ -49,12 +52,21 @@
     UIViewController *vc3 = [UIViewController new];
     vc3.view.backgroundColor = [UIColor yellowColor];
     
+    UIViewController *vc4 = [UIViewController new];
+    vc4.view.backgroundColor = [UIColor redColor];
     
-    [self.segmentBarVC setUpWithItems:items childVCs:@[vc1, vc2, vc3]];
+    UIViewController *vc5 = [UIViewController new];
+    vc5.view.backgroundColor = [UIColor greenColor];
     
-//    [self.segmentBarVC.segmentBar updateWithConfig:^(HSSegmentBarConfig *config) {
-//        
-//        config.segmentBarBackColor = [UIColor cyanColor];
+    UIViewController *vc6 = [UIViewController new];
+    vc6.view.backgroundColor = [UIColor yellowColor];
+    
+    
+    [self.segmentBarVC setUpWithItems:items childVCs:@[vc1, vc2, vc3,vc4,vc5,vc6]];
+    
+    [self.segmentBarVC.segmentBar updateWithConfig:^(HSSegmentBarConfig *config) {
+        
+        config.segmentBarBackColor = [UIColor cyanColor];
 //        //            config.itemNormalColor = [UIColor brownColor];
 //        //            config.itemSelectColor = [UIColor yellowColor];
 //        config.itemSC([UIColor brownColor]).itemNC([UIColor yellowColor]);
@@ -62,9 +74,10 @@
 //        
 //        config.indicatorHeight = 5;
 //        config.indicatorColor = [UIColor blueColor];
-//        config.indicatorExtraW = 0;
-//        
-//    }];
+        config.indicatorExtraW = 0;
+        config.barBtnW = 100;
+        
+    }];
     
     
     

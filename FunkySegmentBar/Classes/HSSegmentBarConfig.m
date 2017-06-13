@@ -21,6 +21,7 @@
     config.indicatorColor = [UIColor redColor];
     config.indicatorHeight = 2;
     config.indicatorExtraW = 10;
+    config.barBtnW = 0;
     
     return config;
     

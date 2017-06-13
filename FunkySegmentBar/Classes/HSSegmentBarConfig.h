@@ -34,6 +34,9 @@
 /** 指示器的额外宽度(在跟随字体宽度之外的额外宽度) */
 @property (nonatomic, assign) CGFloat indicatorExtraW;
 
+/** 选项卡上的按钮宽度（默认是根据按钮字的宽度自适应按钮的宽度） */
+@property (nonatomic, assign) CGFloat barBtnW;
+
 
 // 链式编程的改法
 - (HSSegmentBarConfig *(^)(UIColor *color))itemNC;

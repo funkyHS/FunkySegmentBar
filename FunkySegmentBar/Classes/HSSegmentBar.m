@@ -51,6 +51,10 @@
     return self;
 }
 
+//- (void)setFrame:(CGRect)frame {
+//    [super setFrame:CGRectMake(0, 0, self.superview.bounds.size.width, self.superview.bounds.size.height)];
+//}
+
 // 更改选项卡的样式
 - (void)updateWithConfig: (void(^)(HSSegmentBarConfig *config))configBlock {
     
@@ -155,32 +159,56 @@
     [super layoutSubviews];
     self.contentView.frame = self.bounds;
     
-    // 计算margin
-    CGFloat totalBtnWidth = 0;
-    for (UIButton *btn in self.itemBtns) {
-        [btn sizeToFit];
-        totalBtnWidth += btn.width;
+    
+    CGFloat totalBtnWidth = 0;// 所有按钮的宽度总和
+    CGFloat lastX = 0; // 记录按钮与间隙的总长度
+
+    
+    if (self.config.barBtnW != 0) {
+        // 外界规定了按钮的宽度
+        
+        for (UIButton *btn in self.itemBtns) {
+            
+            [btn sizeToFit];
+            btn.width = self.config.barBtnW;
+            
+            btn.y = 0;
+            btn.x = lastX;
+            lastX += btn.width;
+        }
+        
+        
+    }else{
+        // 按钮的宽度根据title自适应
+        
+        for (UIButton *btn in self.itemBtns) {
+            [btn sizeToFit];
+            totalBtnWidth += btn.width;
+        }
+        
+        // 计算margin
+        CGFloat caculateMargin = (self.width - totalBtnWidth) / (self.items.count + 1);
+        if (caculateMargin < kMinMargin) {
+            caculateMargin = kMinMargin;
+        }
+        
+        lastX = caculateMargin;
+        
+        for (UIButton *btn in self.itemBtns) {
+            // w, h
+            [btn sizeToFit];
+            // y 0
+            // x, y,
+            btn.y = 0;
+            
+            btn.x = lastX;
+            
+            lastX += btn.width + caculateMargin;
+            
+        }
     }
     
-    CGFloat caculateMargin = (self.width - totalBtnWidth) / (self.items.count + 1);
-    if (caculateMargin < kMinMargin) {
-        caculateMargin = kMinMargin;
-    }
-    
-    
-    CGFloat lastX = caculateMargin;
-    for (UIButton *btn in self.itemBtns) {
-        // w, h
-        [btn sizeToFit];
-        // y 0
-        // x, y,
-        btn.y = 0;
-        
-        btn.x = lastX;
-        
-        lastX += btn.width + caculateMargin;
-        
-    }
+
     
     self.contentView.contentSize = CGSizeMake(lastX, 0);
     
@@ -217,6 +245,7 @@
     if (!_contentView) {
         UIScrollView *scrollView = [[UIScrollView alloc] init];
         scrollView.showsHorizontalScrollIndicator = NO;
+        //scrollView.backgroundColor = [UIColor blueColor];
         [self addSubview:scrollView];
         _contentView = scrollView;
     }
