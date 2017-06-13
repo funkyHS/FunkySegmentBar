@@ -1,0 +1,19 @@
+PODS:
+  - FunkyFMBase/Category (0.1.0)
+  - FunkySegmentBar (0.1.0):
+    - FunkyFMBase/Category
+
+DEPENDENCIES:
+  - FunkySegmentBar (from `../`)
+
+EXTERNAL SOURCES:
+  FunkySegmentBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FunkyFMBase: 238f94e4e930f6ae00d5a37c7a167785509a8d9f
+  FunkySegmentBar: 820dcaf52c7b6a39926dcba5443f470b3fcee09e
+
+PODFILE CHECKSUM: b09e7ad3cd99389ebcc07636e514b57c6b0f9ab1
+
+COCOAPODS: 1.2.1

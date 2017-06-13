@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12DFAA28EE89A8F1DB1F684262A79DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */; };
+		1E7D09A0ADA43B1C8A875B6CD247D356 /* HSSementBarVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 766831F1B6121EE416E9E593526A05C2 /* HSSementBarVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2912B982FD87967C38A6ABC50CC3BD98 /* HSSegmentBarConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD2513E63A8F8BFC98F048BDE66495D /* HSSegmentBarConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EE268F573EA8A28A7FE026BB7A0E837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */; };
+		300A9F775BA3EC965F3A3CDEDB83F745 /* FunkySegmentBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E981F985C0C1990CF69414CFCFDCD7F3 /* FunkySegmentBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AABEC4BD585C9BEEABAEDE2C624C788 /* HSSegmentBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 37333AFBB4C4AB2C211E404CBE817B08 /* HSSegmentBarConfig.m */; };
+		3CBA088D49646F0EEAC92307A5182F76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */; };
+		3DA3FCA3501829DFDCCAC962C99E1D25 /* UIView+HSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0EE6F419F5D4666D588BE145B407B /* UIView+HSLayout.m */; };
+		4568C543992955F4225DA9C9D32E645C /* FunkyFMBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 142C3519FD0E3F9EB8DE85E088F7B01A /* FunkyFMBase-dummy.m */; };
+		5AD555C4D354C506CB2974ED4BEDDDE9 /* FunkyFMBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5AFCFF916D3DE6197A9164DDEA3B1F /* FunkyFMBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C65BC561200DFB4FBD6EBE69385A345 /* NSObject+HSBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D178D901350BDDCE07630D17D55B3B78 /* NSObject+HSBundle.m */; };
+		73644413713F3CB6C4CC3B3561D14053 /* HSSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5100729915999D956773461CF832D4D3 /* HSSegmentBar.m */; };
+		797273C19D330426A87A008194D8BCF9 /* CALayer+PauseAimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D50A327ADE0CDF84F10C3C1F6E0EB9 /* CALayer+PauseAimate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D208412EBAA3CF156617969552B026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */; };
+		7C18DBC5DB3F478DD556FB665344FE65 /* Pods-FunkySegmentBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4456D9DF396CC60D87E4F5448544AE /* Pods-FunkySegmentBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E56DD5115C3C9283979ADA4170E86C6 /* CALayer+PauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7CE199572991EE6D4A1C19371D3C3 /* CALayer+PauseAimate.m */; };
+		95086562FE2CF1C689C216DDB62F1C49 /* HSSegmentBar.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB0890DC1E25348A0C4238BC3C1C45A /* HSSegmentBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DCBDDDB61B8B20047FF38262753B77A /* Pods-FunkySegmentBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85B3C2AA46B381C46DD5D5230EE213 /* Pods-FunkySegmentBar_Example-dummy.m */; };
+		BB33FB6ADE409153FA6E2B58E9B25398 /* UIImage+HSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EA27D7EB18B221BABCA7E0FFC7ECDB /* UIImage+HSImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD2B5489B51C6BC6F93D193AF772F643 /* HSSementBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEFC33C7C66CD6957457ECFB382593 /* HSSementBarVC.m */; };
+		BF1A33D54E4CDBE11C48C2545437FC58 /* UIView+HSNib.m in Sources */ = {isa = PBXBuildFile; fileRef = A03389726867415F83E9691934BFD722 /* UIView+HSNib.m */; };
+		C97352BC4A01EFEE76937AFC4F7222E9 /* UIView+HSNib.h in Headers */ = {isa = PBXBuildFile; fileRef = A65922C12202FAD160B0AAA90D7EF5D4 /* UIView+HSNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB24EF300CE6B1A96227ED08CDB0052F /* Pods-FunkySegmentBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B0D34AD6E12EAF7796791EAD8FB6D8 /* Pods-FunkySegmentBar_Tests-dummy.m */; };
+		CECD6E6245D5219F6CFA90CF7EC95D62 /* NSObject+HSBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = CB049D65F3139D7D4DA28929881662EF /* NSObject+HSBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4106DCC62F187CE150F66C3728E1B68 /* FunkySegmentBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CF3C5D1F87A6D03FF46EA2B9F3ED15 /* FunkySegmentBar-dummy.m */; };
+		E4E2F7071939349030556FAD03815BE3 /* Pods-FunkySegmentBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2091F3E6F415513968D3E65729D6CD /* Pods-FunkySegmentBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E586B30E2D988415DB633C3BD138B062 /* UIImage+HSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B1472BC61BF6470EB4A6504D7816C709 /* UIImage+HSImage.m */; };
+		E786E326E0ED12FC1BD10E4F8C2EF65E /* UIView+HSLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B797BF90F360E73CF6B9533E7DB0A3CA /* UIView+HSLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBE8E51172A657498C9746D0C054C195 /* FunkyFMBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01077CD4FADF5B7EA66DB0EE995B6464 /* FunkyFMBase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71D47FB5C7399B8C61974FB8AC65F719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54282B0725D86A9E379459FAC280A57B;
+			remoteInfo = FunkySegmentBar;
+		};
+		A7193BCF5634F6ABF1A19AFDC77FAD4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7333837BBF63A80DD1C0C8BB2AD63AA0;
+			remoteInfo = FunkyFMBase;
+		};
+		F4A80AD93E6421ECC0B1AEBCACA6F2E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7333837BBF63A80DD1C0C8BB2AD63AA0;
+			remoteInfo = FunkyFMBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002619D7C2AF616E923AFF0C27DFEAF3 /* FunkyFMBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FunkyFMBase.modulemap; sourceTree = "<group>"; };
+		01077CD4FADF5B7EA66DB0EE995B6464 /* FunkyFMBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunkyFMBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		059F5D6D10E811993BC11E8CF589B99F /* Pods-FunkySegmentBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunkySegmentBar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0E2091F3E6F415513968D3E65729D6CD /* Pods-FunkySegmentBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FunkySegmentBar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0FFEFC33C7C66CD6957457ECFB382593 /* HSSementBarVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HSSementBarVC.m; sourceTree = "<group>"; };
+		142C3519FD0E3F9EB8DE85E088F7B01A /* FunkyFMBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FunkyFMBase-dummy.m"; sourceTree = "<group>"; };
+		19CF3C5D1F87A6D03FF46EA2B9F3ED15 /* FunkySegmentBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FunkySegmentBar-dummy.m"; sourceTree = "<group>"; };
+		1D4456D9DF396CC60D87E4F5448544AE /* Pods-FunkySegmentBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FunkySegmentBar_Example-umbrella.h"; sourceTree = "<group>"; };
+		1E799D0ACC5BDEB6492F9B9B1807C08E /* Pods_FunkySegmentBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FunkySegmentBar_Example.framework; path = "Pods-FunkySegmentBar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2379C60EC1AB3EEFCDA385F8ABD3283A /* Pods-FunkySegmentBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunkySegmentBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		27B7CE199572991EE6D4A1C19371D3C3 /* CALayer+PauseAimate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PauseAimate.m"; path = "FunkyFMBase/Classes/Category/CALayer+PauseAimate.m"; sourceTree = "<group>"; };
+		37333AFBB4C4AB2C211E404CBE817B08 /* HSSegmentBarConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HSSegmentBarConfig.m; sourceTree = "<group>"; };
+		3B7AE0BD805CECD073460D7E624622EF /* Pods-FunkySegmentBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FunkySegmentBar_Tests.modulemap"; sourceTree = "<group>"; };
+		3E5AFCFF916D3DE6197A9164DDEA3B1F /* FunkyFMBase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunkyFMBase-umbrella.h"; sourceTree = "<group>"; };
+		4FD53B309C91347F58EF1D0F4CDA6B94 /* Pods-FunkySegmentBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunkySegmentBar_Example-frameworks.sh"; sourceTree = "<group>"; };
+		509FECAC0F340A8539C1C37FC9860535 /* Pods-FunkySegmentBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunkySegmentBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5100729915999D956773461CF832D4D3 /* HSSegmentBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HSSegmentBar.m; sourceTree = "<group>"; };
+		56A609DC4F1D74D4DD7E8D02558802F5 /* FunkyFMBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunkyFMBase.xcconfig; sourceTree = "<group>"; };
+		744F06C0C4590F77152321500947D499 /* FunkySegmentBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FunkySegmentBar.modulemap; sourceTree = "<group>"; };
+		766831F1B6121EE416E9E593526A05C2 /* HSSementBarVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HSSementBarVC.h; sourceTree = "<group>"; };
+		7C1FEB87520D37C130F87D806D1781E5 /* FunkyFMBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunkyFMBase-prefix.pch"; sourceTree = "<group>"; };
+		805D9951231ECEFC549DD6FFDD147A5C /* Pods-FunkySegmentBar_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunkySegmentBar_Tests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93D50A327ADE0CDF84F10C3C1F6E0EB9 /* CALayer+PauseAimate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PauseAimate.h"; path = "FunkyFMBase/Classes/Category/CALayer+PauseAimate.h"; sourceTree = "<group>"; };
+		943BFD9745C67CD64AC411BA2C9722CA /* Pods-FunkySegmentBar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FunkySegmentBar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		986D5E281E1EF095E90A675E94BD2A71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BAB8D2EC91643025AC4B0B04507B28 /* Pods-FunkySegmentBar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunkySegmentBar_Example-resources.sh"; sourceTree = "<group>"; };
+		9CDED7FB085EB9FC498681480600CA54 /* Pods-FunkySegmentBar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FunkySegmentBar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D8E4C133845D3B1B6D0688E1C1E9619 /* Pods-FunkySegmentBar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunkySegmentBar_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A03389726867415F83E9691934BFD722 /* UIView+HSNib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HSNib.m"; path = "FunkyFMBase/Classes/Category/UIView+HSNib.m"; sourceTree = "<group>"; };
+		A24F10E56001D654EFD6091737FC723B /* Pods-FunkySegmentBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FunkySegmentBar_Example.modulemap"; sourceTree = "<group>"; };
+		A396995AAD3423996AF284BFDA8EAF9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A65922C12202FAD160B0AAA90D7EF5D4 /* UIView+HSNib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HSNib.h"; path = "FunkyFMBase/Classes/Category/UIView+HSNib.h"; sourceTree = "<group>"; };
+		ABB1B208329424992E4988907F503DB4 /* Pods-FunkySegmentBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunkySegmentBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ABD2513E63A8F8BFC98F048BDE66495D /* HSSegmentBarConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HSSegmentBarConfig.h; sourceTree = "<group>"; };
+		B1472BC61BF6470EB4A6504D7816C709 /* UIImage+HSImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+HSImage.m"; path = "FunkyFMBase/Classes/Category/UIImage+HSImage.m"; sourceTree = "<group>"; };
+		B797BF90F360E73CF6B9533E7DB0A3CA /* UIView+HSLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HSLayout.h"; path = "FunkyFMBase/Classes/Category/UIView+HSLayout.h"; sourceTree = "<group>"; };
+		B854D803CD7264FB794F384BDA0D6043 /* Pods-FunkySegmentBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FunkySegmentBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9A61AF23EBD26BC5498053E88F54E0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA85B3C2AA46B381C46DD5D5230EE213 /* Pods-FunkySegmentBar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FunkySegmentBar_Example-dummy.m"; sourceTree = "<group>"; };
+		BFB0890DC1E25348A0C4238BC3C1C45A /* HSSegmentBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HSSegmentBar.h; sourceTree = "<group>"; };
+		CB049D65F3139D7D4DA28929881662EF /* NSObject+HSBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+HSBundle.h"; path = "FunkyFMBase/Classes/Category/NSObject+HSBundle.h"; sourceTree = "<group>"; };
+		CCE4D0A16876BD02CBF7A1804906C4A8 /* FunkySegmentBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunkySegmentBar.xcconfig; sourceTree = "<group>"; };
+		CF5AE94F1F1A2A095DADEBCFB4D2E343 /* FunkySegmentBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FunkySegmentBar.framework; path = FunkySegmentBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D178D901350BDDCE07630D17D55B3B78 /* NSObject+HSBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+HSBundle.m"; path = "FunkyFMBase/Classes/Category/NSObject+HSBundle.m"; sourceTree = "<group>"; };
+		D1DFFFB6AE2BC079D6997A224FBF0D3A /* FunkyFMBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FunkyFMBase.framework; path = FunkyFMBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EA27D7EB18B221BABCA7E0FFC7ECDB /* UIImage+HSImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+HSImage.h"; path = "FunkyFMBase/Classes/Category/UIImage+HSImage.h"; sourceTree = "<group>"; };
+		E7B0D34AD6E12EAF7796791EAD8FB6D8 /* Pods-FunkySegmentBar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FunkySegmentBar_Tests-dummy.m"; sourceTree = "<group>"; };
+		E981F985C0C1990CF69414CFCFDCD7F3 /* FunkySegmentBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunkySegmentBar-umbrella.h"; sourceTree = "<group>"; };
+		EC960D1AEA893C21E54555FA6AB06857 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F895EAEC1DB3EBC5F5F6BD4AD75B6FC8 /* Pods_FunkySegmentBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FunkySegmentBar_Tests.framework; path = "Pods-FunkySegmentBar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7E08720492D4AD2724AB764CAA442B /* FunkySegmentBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunkySegmentBar-prefix.pch"; sourceTree = "<group>"; };
+		FD885EA786935710206641F759D31916 /* Pods-FunkySegmentBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FunkySegmentBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FDC0EE6F419F5D4666D588BE145B407B /* UIView+HSLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HSLayout.m"; path = "FunkyFMBase/Classes/Category/UIView+HSLayout.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2364F1E024AC2C9CDC89987286AB6082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBA088D49646F0EEAC92307A5182F76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB7CB588FE7F47F885ADC321D6B418A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DFAA28EE89A8F1DB1F684262A79DEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A2EA120B2AD02EE93583AEC02683CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D208412EBAA3CF156617969552B026 /* Foundation.framework in Frameworks */,
+				FBE8E51172A657498C9746D0C054C195 /* FunkyFMBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72E3C00603424F9E170D04DFFED7687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE268F573EA8A28A7FE026BB7A0E837 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01FE2A298FF00A719ACDC456BD88D082 /* FunkyFMBase */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B42A4DA6BE80F31317A13A944C7B5 /* Category */,
+				81908722A7F4D2AFEF79DCBE33A25AE9 /* Support Files */,
+			);
+			name = FunkyFMBase;
+			path = FunkyFMBase;
+			sourceTree = "<group>";
+		};
+		1D1EF0A334FBC4D6AC16921F42A22DF5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A423D8AA801BC820A9D8BAEA91D7AC5E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4177F6BC971A5E213A861B00A1C90FE7 /* Pods-FunkySegmentBar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A396995AAD3423996AF284BFDA8EAF9A /* Info.plist */,
+				3B7AE0BD805CECD073460D7E624622EF /* Pods-FunkySegmentBar_Tests.modulemap */,
+				9CDED7FB085EB9FC498681480600CA54 /* Pods-FunkySegmentBar_Tests-acknowledgements.markdown */,
+				B854D803CD7264FB794F384BDA0D6043 /* Pods-FunkySegmentBar_Tests-acknowledgements.plist */,
+				E7B0D34AD6E12EAF7796791EAD8FB6D8 /* Pods-FunkySegmentBar_Tests-dummy.m */,
+				9D8E4C133845D3B1B6D0688E1C1E9619 /* Pods-FunkySegmentBar_Tests-frameworks.sh */,
+				805D9951231ECEFC549DD6FFDD147A5C /* Pods-FunkySegmentBar_Tests-resources.sh */,
+				0E2091F3E6F415513968D3E65729D6CD /* Pods-FunkySegmentBar_Tests-umbrella.h */,
+				509FECAC0F340A8539C1C37FC9860535 /* Pods-FunkySegmentBar_Tests.debug.xcconfig */,
+				ABB1B208329424992E4988907F503DB4 /* Pods-FunkySegmentBar_Tests.release.xcconfig */,
+			);
+			name = "Pods-FunkySegmentBar_Tests";
+			path = "Target Support Files/Pods-FunkySegmentBar_Tests";
+			sourceTree = "<group>";
+		};
+		4D43DE038E5E20F74F936F2978A73AB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1DFFFB6AE2BC079D6997A224FBF0D3A /* FunkyFMBase.framework */,
+				CF5AE94F1F1A2A095DADEBCFB4D2E343 /* FunkySegmentBar.framework */,
+				1E799D0ACC5BDEB6492F9B9B1807C08E /* Pods_FunkySegmentBar_Example.framework */,
+				F895EAEC1DB3EBC5F5F6BD4AD75B6FC8 /* Pods_FunkySegmentBar_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DA6C7D90F827F42E9B10FAF35AB7121A /* Development Pods */,
+				ABBD27317913633B3E1911C0F651E34A /* Frameworks */,
+				F38422C98F770FD1B29A97F3A29BFBC7 /* Pods */,
+				4D43DE038E5E20F74F936F2978A73AB2 /* Products */,
+				B18026443CB59338E44B0ED64A52112E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81908722A7F4D2AFEF79DCBE33A25AE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				002619D7C2AF616E923AFF0C27DFEAF3 /* FunkyFMBase.modulemap */,
+				56A609DC4F1D74D4DD7E8D02558802F5 /* FunkyFMBase.xcconfig */,
+				142C3519FD0E3F9EB8DE85E088F7B01A /* FunkyFMBase-dummy.m */,
+				7C1FEB87520D37C130F87D806D1781E5 /* FunkyFMBase-prefix.pch */,
+				3E5AFCFF916D3DE6197A9164DDEA3B1F /* FunkyFMBase-umbrella.h */,
+				B9A61AF23EBD26BC5498053E88F54E0F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FunkyFMBase";
+			sourceTree = "<group>";
+		};
+		8D0370432400D3BF5E1FB32B25507AEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				744F06C0C4590F77152321500947D499 /* FunkySegmentBar.modulemap */,
+				CCE4D0A16876BD02CBF7A1804906C4A8 /* FunkySegmentBar.xcconfig */,
+				19CF3C5D1F87A6D03FF46EA2B9F3ED15 /* FunkySegmentBar-dummy.m */,
+				FB7E08720492D4AD2724AB764CAA442B /* FunkySegmentBar-prefix.pch */,
+				E981F985C0C1990CF69414CFCFDCD7F3 /* FunkySegmentBar-umbrella.h */,
+				EC960D1AEA893C21E54555FA6AB06857 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FunkySegmentBar";
+			sourceTree = "<group>";
+		};
+		ABBD27317913633B3E1911C0F651E34A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01077CD4FADF5B7EA66DB0EE995B6464 /* FunkyFMBase.framework */,
+				1D1EF0A334FBC4D6AC16921F42A22DF5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4B42A4DA6BE80F31317A13A944C7B5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				93D50A327ADE0CDF84F10C3C1F6E0EB9 /* CALayer+PauseAimate.h */,
+				27B7CE199572991EE6D4A1C19371D3C3 /* CALayer+PauseAimate.m */,
+				CB049D65F3139D7D4DA28929881662EF /* NSObject+HSBundle.h */,
+				D178D901350BDDCE07630D17D55B3B78 /* NSObject+HSBundle.m */,
+				D4EA27D7EB18B221BABCA7E0FFC7ECDB /* UIImage+HSImage.h */,
+				B1472BC61BF6470EB4A6504D7816C709 /* UIImage+HSImage.m */,
+				B797BF90F360E73CF6B9533E7DB0A3CA /* UIView+HSLayout.h */,
+				FDC0EE6F419F5D4666D588BE145B407B /* UIView+HSLayout.m */,
+				A65922C12202FAD160B0AAA90D7EF5D4 /* UIView+HSNib.h */,
+				A03389726867415F83E9691934BFD722 /* UIView+HSNib.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B18026443CB59338E44B0ED64A52112E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C735AF16F503FE7527FBF63A10EF043A /* Pods-FunkySegmentBar_Example */,
+				4177F6BC971A5E213A861B00A1C90FE7 /* Pods-FunkySegmentBar_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C735AF16F503FE7527FBF63A10EF043A /* Pods-FunkySegmentBar_Example */ = {
+			isa = PBXGroup;
+			children = (
+				986D5E281E1EF095E90A675E94BD2A71 /* Info.plist */,
+				A24F10E56001D654EFD6091737FC723B /* Pods-FunkySegmentBar_Example.modulemap */,
+				FD885EA786935710206641F759D31916 /* Pods-FunkySegmentBar_Example-acknowledgements.markdown */,
+				943BFD9745C67CD64AC411BA2C9722CA /* Pods-FunkySegmentBar_Example-acknowledgements.plist */,
+				BA85B3C2AA46B381C46DD5D5230EE213 /* Pods-FunkySegmentBar_Example-dummy.m */,
+				4FD53B309C91347F58EF1D0F4CDA6B94 /* Pods-FunkySegmentBar_Example-frameworks.sh */,
+				98BAB8D2EC91643025AC4B0B04507B28 /* Pods-FunkySegmentBar_Example-resources.sh */,
+				1D4456D9DF396CC60D87E4F5448544AE /* Pods-FunkySegmentBar_Example-umbrella.h */,
+				2379C60EC1AB3EEFCDA385F8ABD3283A /* Pods-FunkySegmentBar_Example.debug.xcconfig */,
+				059F5D6D10E811993BC11E8CF589B99F /* Pods-FunkySegmentBar_Example.release.xcconfig */,
+			);
+			name = "Pods-FunkySegmentBar_Example";
+			path = "Target Support Files/Pods-FunkySegmentBar_Example";
+			sourceTree = "<group>";
+		};
+		DA6C7D90F827F42E9B10FAF35AB7121A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8CAD1D26C6212363723F665FE094A4D /* FunkySegmentBar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E2C10C85EDE24860549366B2AEF4FB1E /* FunkySegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				E4875A29297AA65C1D32E0AF763122B5 /* Classes */,
+			);
+			name = FunkySegmentBar;
+			path = FunkySegmentBar;
+			sourceTree = "<group>";
+		};
+		E4875A29297AA65C1D32E0AF763122B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFB0890DC1E25348A0C4238BC3C1C45A /* HSSegmentBar.h */,
+				5100729915999D956773461CF832D4D3 /* HSSegmentBar.m */,
+				ABD2513E63A8F8BFC98F048BDE66495D /* HSSegmentBarConfig.h */,
+				37333AFBB4C4AB2C211E404CBE817B08 /* HSSegmentBarConfig.m */,
+				766831F1B6121EE416E9E593526A05C2 /* HSSementBarVC.h */,
+				0FFEFC33C7C66CD6957457ECFB382593 /* HSSementBarVC.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8CAD1D26C6212363723F665FE094A4D /* FunkySegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				E2C10C85EDE24860549366B2AEF4FB1E /* FunkySegmentBar */,
+				8D0370432400D3BF5E1FB32B25507AEB /* Support Files */,
+			);
+			name = FunkySegmentBar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F38422C98F770FD1B29A97F3A29BFBC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01FE2A298FF00A719ACDC456BD88D082 /* FunkyFMBase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		206937B22A7A8587188E28DE1F9947E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300A9F775BA3EC965F3A3CDEDB83F745 /* FunkySegmentBar-umbrella.h in Headers */,
+				95086562FE2CF1C689C216DDB62F1C49 /* HSSegmentBar.h in Headers */,
+				2912B982FD87967C38A6ABC50CC3BD98 /* HSSegmentBarConfig.h in Headers */,
+				1E7D09A0ADA43B1C8A875B6CD247D356 /* HSSementBarVC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43789583E75BDE4CA40FC11D87E3E9DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797273C19D330426A87A008194D8BCF9 /* CALayer+PauseAimate.h in Headers */,
+				5AD555C4D354C506CB2974ED4BEDDDE9 /* FunkyFMBase-umbrella.h in Headers */,
+				CECD6E6245D5219F6CFA90CF7EC95D62 /* NSObject+HSBundle.h in Headers */,
+				BB33FB6ADE409153FA6E2B58E9B25398 /* UIImage+HSImage.h in Headers */,
+				E786E326E0ED12FC1BD10E4F8C2EF65E /* UIView+HSLayout.h in Headers */,
+				C97352BC4A01EFEE76937AFC4F7222E9 /* UIView+HSNib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA108E6CF91931498FE851EAF5D376E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C18DBC5DB3F478DD556FB665344FE65 /* Pods-FunkySegmentBar_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7E32493587FB163CAADFF54CFBA209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E2F7071939349030556FAD03815BE3 /* Pods-FunkySegmentBar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3246B49276BB337993C41CCD6FA39170 /* Pods-FunkySegmentBar_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964E68BA4498CB05555D7003B989550D /* Build configuration list for PBXNativeTarget "Pods-FunkySegmentBar_Example" */;
+			buildPhases = (
+				199F75040199C25103DA8AF1BE6C2C10 /* Sources */,
+				F72E3C00603424F9E170D04DFFED7687 /* Frameworks */,
+				ACA108E6CF91931498FE851EAF5D376E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CA23F81949A426AAEECCD8AACB9106 /* PBXTargetDependency */,
+				E62FC8F13969B762510158C97027420F /* PBXTargetDependency */,
+			);
+			name = "Pods-FunkySegmentBar_Example";
+			productName = "Pods-FunkySegmentBar_Example";
+			productReference = 1E799D0ACC5BDEB6492F9B9B1807C08E /* Pods_FunkySegmentBar_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54282B0725D86A9E379459FAC280A57B /* FunkySegmentBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 879410C7ABF933DB7C3D0CDCD5C63905 /* Build configuration list for PBXNativeTarget "FunkySegmentBar" */;
+			buildPhases = (
+				CEEABB73F9EEA94F503AE35E0D1F234B /* Sources */,
+				98A2EA120B2AD02EE93583AEC02683CC /* Frameworks */,
+				206937B22A7A8587188E28DE1F9947E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC50D1BEE9CA8EF466BABA90BA7BE73C /* PBXTargetDependency */,
+			);
+			name = FunkySegmentBar;
+			productName = FunkySegmentBar;
+			productReference = CF5AE94F1F1A2A095DADEBCFB4D2E343 /* FunkySegmentBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7333837BBF63A80DD1C0C8BB2AD63AA0 /* FunkyFMBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63BA689ACA0CE583BD1976F16C4E1A02 /* Build configuration list for PBXNativeTarget "FunkyFMBase" */;
+			buildPhases = (
+				A9B816A5D8C20FBF68D11993751C0279 /* Sources */,
+				2364F1E024AC2C9CDC89987286AB6082 /* Frameworks */,
+				43789583E75BDE4CA40FC11D87E3E9DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunkyFMBase;
+			productName = FunkyFMBase;
+			productReference = D1DFFFB6AE2BC079D6997A224FBF0D3A /* FunkyFMBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		933F8B3040F4C87FF409A48B33C66142 /* Pods-FunkySegmentBar_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F9C6BF9A77B0DE651A2AE5FD5545DE6 /* Build configuration list for PBXNativeTarget "Pods-FunkySegmentBar_Tests" */;
+			buildPhases = (
+				AA8BFC3C3372169EC794D72465ACF521 /* Sources */,
+				8BB7CB588FE7F47F885ADC321D6B418A /* Frameworks */,
+				AF7E32493587FB163CAADFF54CFBA209 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FunkySegmentBar_Tests";
+			productName = "Pods-FunkySegmentBar_Tests";
+			productReference = F895EAEC1DB3EBC5F5F6BD4AD75B6FC8 /* Pods_FunkySegmentBar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4D43DE038E5E20F74F936F2978A73AB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7333837BBF63A80DD1C0C8BB2AD63AA0 /* FunkyFMBase */,
+				54282B0725D86A9E379459FAC280A57B /* FunkySegmentBar */,
+				3246B49276BB337993C41CCD6FA39170 /* Pods-FunkySegmentBar_Example */,
+				933F8B3040F4C87FF409A48B33C66142 /* Pods-FunkySegmentBar_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		199F75040199C25103DA8AF1BE6C2C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DCBDDDB61B8B20047FF38262753B77A /* Pods-FunkySegmentBar_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B816A5D8C20FBF68D11993751C0279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E56DD5115C3C9283979ADA4170E86C6 /* CALayer+PauseAimate.m in Sources */,
+				4568C543992955F4225DA9C9D32E645C /* FunkyFMBase-dummy.m in Sources */,
+				5C65BC561200DFB4FBD6EBE69385A345 /* NSObject+HSBundle.m in Sources */,
+				E586B30E2D988415DB633C3BD138B062 /* UIImage+HSImage.m in Sources */,
+				3DA3FCA3501829DFDCCAC962C99E1D25 /* UIView+HSLayout.m in Sources */,
+				BF1A33D54E4CDBE11C48C2545437FC58 /* UIView+HSNib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8BFC3C3372169EC794D72465ACF521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB24EF300CE6B1A96227ED08CDB0052F /* Pods-FunkySegmentBar_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEABB73F9EEA94F503AE35E0D1F234B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4106DCC62F187CE150F66C3728E1B68 /* FunkySegmentBar-dummy.m in Sources */,
+				73644413713F3CB6C4CC3B3561D14053 /* HSSegmentBar.m in Sources */,
+				3AABEC4BD585C9BEEABAEDE2C624C788 /* HSSegmentBarConfig.m in Sources */,
+				BD2B5489B51C6BC6F93D193AF772F643 /* HSSementBarVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13CA23F81949A426AAEECCD8AACB9106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FunkyFMBase;
+			target = 7333837BBF63A80DD1C0C8BB2AD63AA0 /* FunkyFMBase */;
+			targetProxy = F4A80AD93E6421ECC0B1AEBCACA6F2E9 /* PBXContainerItemProxy */;
+		};
+		E62FC8F13969B762510158C97027420F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FunkySegmentBar;
+			target = 54282B0725D86A9E379459FAC280A57B /* FunkySegmentBar */;
+			targetProxy = 71D47FB5C7399B8C61974FB8AC65F719 /* PBXContainerItemProxy */;
+		};
+		FC50D1BEE9CA8EF466BABA90BA7BE73C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FunkyFMBase;
+			target = 7333837BBF63A80DD1C0C8BB2AD63AA0 /* FunkyFMBase */;
+			targetProxy = A7193BCF5634F6ABF1A19AFDC77FAD4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DA103C5F95AD07EDA5B5B7D5E7BCCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB1B208329424992E4988907F503DB4 /* Pods-FunkySegmentBar_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FunkySegmentBar_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FunkySegmentBar_Tests/Pods-FunkySegmentBar_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FunkySegmentBar_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E4DA9501F94F13350FC935CC2A4C9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A609DC4F1D74D4DD7E8D02558802F5 /* FunkyFMBase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FunkyFMBase/FunkyFMBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FunkyFMBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FunkyFMBase/FunkyFMBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FunkyFMBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		21E08829096A3D6B67FF31DE112C5CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE4D0A16876BD02CBF7A1804906C4A8 /* FunkySegmentBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FunkySegmentBar/FunkySegmentBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FunkySegmentBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FunkySegmentBar/FunkySegmentBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FunkySegmentBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		370B269FA06BB0028F2D47497EFA6163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059F5D6D10E811993BC11E8CF589B99F /* Pods-FunkySegmentBar_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FunkySegmentBar_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FunkySegmentBar_Example/Pods-FunkySegmentBar_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FunkySegmentBar_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		752CD981D2056C73030FA5C91C8821C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE4D0A16876BD02CBF7A1804906C4A8 /* FunkySegmentBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FunkySegmentBar/FunkySegmentBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FunkySegmentBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FunkySegmentBar/FunkySegmentBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FunkySegmentBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		809FDB615D5D7F1EFC28674B0548821F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2379C60EC1AB3EEFCDA385F8ABD3283A /* Pods-FunkySegmentBar_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FunkySegmentBar_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FunkySegmentBar_Example/Pods-FunkySegmentBar_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FunkySegmentBar_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B92D9ABD1013053F38AAE7F40C755F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509FECAC0F340A8539C1C37FC9860535 /* Pods-FunkySegmentBar_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FunkySegmentBar_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FunkySegmentBar_Tests/Pods-FunkySegmentBar_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FunkySegmentBar_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED6BC2CE615AC49C8A92A8C19A8899D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A609DC4F1D74D4DD7E8D02558802F5 /* FunkyFMBase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FunkyFMBase/FunkyFMBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FunkyFMBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FunkyFMBase/FunkyFMBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FunkyFMBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63BA689ACA0CE583BD1976F16C4E1A02 /* Build configuration list for PBXNativeTarget "FunkyFMBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4DA9501F94F13350FC935CC2A4C9AF /* Debug */,
+				ED6BC2CE615AC49C8A92A8C19A8899D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		879410C7ABF933DB7C3D0CDCD5C63905 /* Build configuration list for PBXNativeTarget "FunkySegmentBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752CD981D2056C73030FA5C91C8821C5 /* Debug */,
+				21E08829096A3D6B67FF31DE112C5CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F9C6BF9A77B0DE651A2AE5FD5545DE6 /* Build configuration list for PBXNativeTarget "Pods-FunkySegmentBar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92D9ABD1013053F38AAE7F40C755F39 /* Debug */,
+				10DA103C5F95AD07EDA5B5B7D5E7BCCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964E68BA4498CB05555D7003B989550D /* Build configuration list for PBXNativeTarget "Pods-FunkySegmentBar_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809FDB615D5D7F1EFC28674B0548821F /* Debug */,
+				370B269FA06BB0028F2D47497EFA6163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

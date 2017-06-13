@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0E6CA5463A8C95D12F12B07D /* Pods-FunkySegmentBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunkySegmentBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunkySegmentBar_Example/Pods-FunkySegmentBar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		58BE8FBBA8C8D47F0AD987AC /* FunkySegmentBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FunkySegmentBar.podspec; path = ../FunkySegmentBar.podspec; sourceTree = "<group>"; };
+		58BE8FBBA8C8D47F0AD987AC /* FunkySegmentBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FunkySegmentBar.podspec; path = ../FunkySegmentBar.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FunkySegmentBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunkySegmentBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,9 +60,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AD515954903D526DE0A94EF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AD515954903D526DE0A94EF6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CAE9224559CB283D60C2D3F6 /* Pods-FunkySegmentBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunkySegmentBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunkySegmentBar_Tests/Pods-FunkySegmentBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DA2AAB2CF721865EDDE03DBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DA2AAB2CF721865EDDE03DBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DAB51697EF05E04AB15FD3E4 /* Pods_FunkySegmentBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunkySegmentBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4AFA9A066CF4472D187D30 /* Pods-FunkySegmentBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunkySegmentBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunkySegmentBar_Example/Pods-FunkySegmentBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EDBF0A2505814A9ACBDED3F8 /* Pods-FunkySegmentBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunkySegmentBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunkySegmentBar_Tests/Pods-FunkySegmentBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F55B131EEEE8100033572C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +141,7 @@
 			children = (
 				6003F59C195388D20070C39A /* HSAppDelegate.h */,
 				6003F59D195388D20070C39A /* HSAppDelegate.m */,
+				37F55B131EEEE8100033572C /* Classes */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* HSViewController.h */,
 				6003F5A6195388D20070C39A /* HSViewController.m */,

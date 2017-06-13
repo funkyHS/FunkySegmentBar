@@ -1,0 +1,6 @@
+framework module Pods_FunkySegmentBar_Tests {
+  umbrella header "Pods-FunkySegmentBar_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

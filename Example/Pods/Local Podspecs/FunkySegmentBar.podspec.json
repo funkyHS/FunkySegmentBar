@@ -1,0 +1,27 @@
+{
+  "name": "FunkySegmentBar",
+  "version": "0.1.0",
+  "summary": "FunkySegmentBar",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/funkyHS/FunkySegmentBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "funkyHS": "hs1024942667@163.com"
+  },
+  "source": {
+    "git": "https://github.com/funkyHS/FunkySegmentBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FunkySegmentBar/Classes/**/*",
+  "dependencies": {
+    "FunkyFMBase/Category": [
+
+    ]
+  }
+}
