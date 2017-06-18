@@ -1,8 +1,8 @@
 {
   "name": "FunkySegmentBar",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "FunkySegmentBar",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "FunkySegmentBar 是FM的选项卡组件，可以对选项卡进行样式的配置",
   "homepage": "https://github.com/funkyHS/FunkySegmentBar",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/funkyHS/FunkySegmentBar.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

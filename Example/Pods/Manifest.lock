@@ -1,6 +1,6 @@
 PODS:
   - FunkyFMBase/Category (0.1.0)
-  - FunkySegmentBar (0.1.0):
+  - FunkySegmentBar (0.1.2):
     - FunkyFMBase/Category
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FunkyFMBase: 238f94e4e930f6ae00d5a37c7a167785509a8d9f
-  FunkySegmentBar: 820dcaf52c7b6a39926dcba5443f470b3fcee09e
+  FunkySegmentBar: 8f82f32477ecd9fd66cff9cb9ecae1377177f8bc
 
 PODFILE CHECKSUM: b09e7ad3cd99389ebcc07636e514b57c6b0f9ab1
 

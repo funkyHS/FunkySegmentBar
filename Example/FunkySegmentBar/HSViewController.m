@@ -9,7 +9,6 @@
 #import "HSViewController.h"
 #import "HSSementBarVC.h"
 
-
 @interface HSViewController ()
 
 @property (nonatomic, weak) HSSementBarVC *segmentBarVC;
@@ -24,19 +23,20 @@
 {
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     
     // 300
-    self.segmentBarVC.segmentBar.frame = CGRectMake(0, 0, 300, 35);
-    self.navigationItem.titleView = self.segmentBarVC.segmentBar;
+//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+//    self.segmentBarVC.segmentBar.frame = CGRectMake(0, 0, 300, 35);
+//    self.navigationItem.titleView = self.segmentBarVC.segmentBar;
 
-    self.navigationItem.titleView.backgroundColor = [UIColor blackColor];
+    //self.navigationItem.titleView.backgroundColor = [UIColor blackColor];
     self.segmentBarVC.view.frame = self.view.bounds;
     [self.view addSubview:self.segmentBarVC.view];
     
     
-
     
     NSArray *items = @[@"专辑", @"声音", @"下载中",@"专辑", @"声音", @"下载中"];
     
@@ -61,25 +61,20 @@
     UIViewController *vc6 = [UIViewController new];
     vc6.view.backgroundColor = [UIColor yellowColor];
     
-    
     [self.segmentBarVC setUpWithItems:items childVCs:@[vc1, vc2, vc3,vc4,vc5,vc6]];
+    
     
     [self.segmentBarVC.segmentBar updateWithConfig:^(HSSegmentBarConfig *config) {
         
-        config.segmentBarBackColor = [UIColor cyanColor];
-//        //            config.itemNormalColor = [UIColor brownColor];
-//        //            config.itemSelectColor = [UIColor yellowColor];
-//        config.itemSC([UIColor brownColor]).itemNC([UIColor yellowColor]);
-//        config.itemFont = [UIFont fontWithName:@"Zapfino" size:10];
-//        
-//        config.indicatorHeight = 5;
-//        config.indicatorColor = [UIColor blueColor];
+        //config.segmentBarBackColor = [UIColor cyanColor];
         config.indicatorExtraW = 0;
-        config.barBtnW = 100;
+        //config.barBtnW = 100;
+        config.isShowMore = YES;
+        config.segSelectedFont = [UIFont systemFontOfSize:13];
         
     }];
     
-    
+
     
 }
 

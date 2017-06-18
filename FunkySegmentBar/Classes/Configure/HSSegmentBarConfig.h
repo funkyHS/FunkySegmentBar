@@ -13,6 +13,9 @@
 
 + (instancetype)defaultConfig;
 
+/** 控制是否显示更多*/
+@property (nonatomic, assign) BOOL isShowMore;
+
 /** 背景颜色 */
 @property (nonatomic, strong) UIColor *segmentBarBackColor;
 
@@ -22,8 +25,11 @@
 /** 选项颜色(选中) */
 @property (nonatomic, strong) UIColor *itemSelectColor;
 
-/** 选项字体 */
-@property (nonatomic, strong) UIFont *itemFont;
+/** 选项字体(普通) */
+@property (nonatomic, strong) UIFont *segNormalFont;
+
+/** 选项字体(选中) */
+@property (nonatomic, strong) UIFont *segSelectedFont;
 
 /** 指示器颜色, 默认红色 */
 @property (nonatomic, strong) UIColor *indicatorColor;
@@ -34,8 +40,14 @@
 /** 指示器的额外宽度(在跟随字体宽度之外的额外宽度) */
 @property (nonatomic, assign) CGFloat indicatorExtraW;
 
-/** 选项卡上的按钮宽度（默认是根据按钮字的宽度自适应按钮的宽度） */
+/** bar按钮宽度（默认是根据按钮字的宽度自适应按钮的宽度） */
 @property (nonatomic, assign) CGFloat barBtnW;
+
+/** 更多按钮宽度（默认是55） */
+@property (nonatomic, assign) CGFloat showMoreBtnW;
+
+/** 选项卡之间的最小间距 */
+@property (nonatomic, assign) CGFloat limitMargin;
 
 
 // 链式编程的改法

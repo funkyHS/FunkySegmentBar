@@ -19,12 +19,39 @@
 @implementation HSSementBarVC
 
 
-- (void)viewDidLoad
-{
+
+- (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    [self segmentBar];
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+  
+    
+    if (self.segmentBar.superview == self.view) {
+
+        CGFloat contentViewY = self.segmentBar.y + self.segmentBar.height;
+        CGRect contentFrame = CGRectMake(0, contentViewY, self.view.width, self.view.height - contentViewY);
+        self.contentView.frame = contentFrame;
+        self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.width, 0);
+        
+        return;
+    }
+    
+    
+    CGRect contentFrame = CGRectMake(0, 0,self.view.width,self.view.height);
+    self.contentView.frame = contentFrame;
+    self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.width, 0);
+    
+    
+    self.segmentBar.selectIndex = self.segmentBar.selectIndex;
+    
+    
+}
 
 - (void)setUpWithItems: (NSArray <NSString *>*)items childVCs: (NSArray <UIViewController *>*)childVCs {
     
@@ -47,9 +74,7 @@
     self.segmentBar.selectIndex = 0;
     
     
-    
 }
-
 
 - (void)showChildVCViewsAtIndex: (NSInteger)index {
     
@@ -67,38 +92,9 @@
 }
 
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    
-    if (self.segmentBar.superview == self.view) {
-        self.segmentBar.frame = CGRectMake(0, 60, self.view.width, 35);
-        
-        CGFloat contentViewY = self.segmentBar.y + self.segmentBar.height;
-        CGRect contentFrame = CGRectMake(0, contentViewY, self.view.width, self.view.height - contentViewY);
-        self.contentView.frame = contentFrame;
-        self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.width, 0);
-        
-        return;
-    }
-    
-    
-    CGRect contentFrame = CGRectMake(0, 0,self.view.width,self.view.height);
-    self.contentView.frame = contentFrame;
-    self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.width, 0);
-    
-    
-    // 其他的控制器视图, 大小
-    // 遍历所有的视图, 重新添加, 重新进行布局
-    // 注意: 1个视图
-    //
-    
-    self.segmentBar.selectIndex = self.segmentBar.selectIndex;
-    
-}
 
 #pragma mark - 选项卡代理方法
-- (void)segmentBar:(HSSegmentBar *)segmentBar didSelectIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
-{
+- (void)segmentBar:(HSSegmentBar *)segmentBar didSelectIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex {
     NSLog(@"%zd----%zd", fromIndex, toIndex);
     [self showChildVCViewsAtIndex:toIndex];
 }
@@ -119,8 +115,10 @@
 #pragma mark - 懒加载
 // 选项卡控件
 - (HSSegmentBar *)segmentBar {
+    
     if (!_segmentBar) {
-        HSSegmentBar *segmentBar = [HSSegmentBar segmentBarWithFrame:CGRectZero];
+        
+        HSSegmentBar *segmentBar = [HSSegmentBar segmentBarWithFrame:CGRectMake(0, 0, self.view.width, 35)];
         segmentBar.delegate = self;
         [self.view addSubview:segmentBar];
         _segmentBar = segmentBar;
@@ -140,5 +138,6 @@
     }
     return _contentView;
 }
+
 
 @end

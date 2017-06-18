@@ -14,7 +14,8 @@
     
     HSSegmentBarConfig *config = [[HSSegmentBarConfig alloc] init];
     config.segmentBarBackColor = [UIColor clearColor];
-    config.itemFont = [UIFont systemFontOfSize:15];
+    config.segNormalFont = [UIFont systemFontOfSize:12];
+    config.segSelectedFont = [UIFont systemFontOfSize:12];
     config.itemNormalColor = [UIColor lightGrayColor];
     config.itemSelectColor = [UIColor redColor];
     
@@ -22,12 +23,18 @@
     config.indicatorHeight = 2;
     config.indicatorExtraW = 10;
     config.barBtnW = 0;
+    config.limitMargin = 25;
+    config.showMoreBtnW = -1;
     
     return config;
     
 }
 
-
+-(void)setIsShowMore:(BOOL)isShowMore {
+    _isShowMore = isShowMore;
+    
+    self.showMoreBtnW = _isShowMore? 55 : -1;
+}
 
 - (HSSegmentBarConfig *(^)(UIColor *))itemNC {
     
