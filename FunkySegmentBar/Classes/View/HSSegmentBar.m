@@ -174,6 +174,7 @@
         self.showDetailVC.items = _items;
         self.showDetailVC.collectionView.height = 0;
         self.selectIndex = 0;
+        self.showMoreBtn.hidden = NO;
     }
 }
 
@@ -417,7 +418,8 @@
         UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 8, 1, 20)];
         line.backgroundColor = [UIColor lightGrayColor];
         [_showMoreBtn addSubview:line];
-        
+        _showMoreBtn.hidden = YES;
+
         
         [_showMoreBtn addTarget:self action:@selector(showOrHide:) forControlEvents:UIControlEventTouchUpInside];
         

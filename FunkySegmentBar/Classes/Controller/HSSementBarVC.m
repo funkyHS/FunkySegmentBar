@@ -134,6 +134,7 @@
         contentView.delegate = self;
         contentView.pagingEnabled = YES;
         [self.view addSubview:contentView];
+        [self.view sendSubviewToBack:contentView];
         _contentView = contentView;
     }
     return _contentView;
